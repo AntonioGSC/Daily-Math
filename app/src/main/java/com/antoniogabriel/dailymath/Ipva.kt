@@ -27,23 +27,23 @@ class Ipva : AppCompatActivity() {
 
             when(escolha){
                 "SC", "ES", "SE", "PB", "AC", "TO" -> {
-                    val IPVA = valorCarro * 0.02
+                    val IPVA = String.format("%.2f", valorCarro * 0.02).toDouble()
                     txtResultadoIpva.text = "R$ $IPVA"
                 }
                 "AL", "PE", "RN", "CE", "PI", "MA", "BA", "PA", "MS", "GO" -> {
-                    val IPVA = valorCarro * 0.025
+                    val IPVA = String.format("%.2f", valorCarro * 0.025).toDouble()
                     txtResultadoIpva.text = "R$ $IPVA"
                 }
                 "RS", "SP", "AP", "AM", "RR", "RO", "MT", "DF" -> {
-                    val IPVA = valorCarro * 0.03
+                    val IPVA = String.format("%.2f", valorCarro * 0.03).toDouble()
                     txtResultadoIpva.text = "R$ $IPVA"
                 }
                 "PR" -> {
-                    val IPVA = valorCarro * 0.035
+                    val IPVA = String.format("%.2f", valorCarro * 0.035).toDouble()
                     txtResultadoIpva.text = "R$ $IPVA"
                 }
                 "RJ", "MG" -> {
-                    val IPVA = valorCarro * 0.04
+                    val IPVA = String.format("%.2f", valorCarro * 0.04).toDouble()
                     txtResultadoIpva.text = "R$ $IPVA"
                 }
                 else -> {

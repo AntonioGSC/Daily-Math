@@ -8,6 +8,26 @@
     android:backgroundTint="@color/colorPrimaryDark"
     tools:context=".ChoppWare">
 
+    <EditText
+        android:id="@+id/edtAlcoolPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Digite seu Peso"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/edtAlcool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnSexo" />
+
     <Button
         android:id="@+id/btnHomeAlcool"
         style="@style/Widget.AppCompat.Button"
@@ -30,7 +50,8 @@
         android:id="@+id/txtResultadoAlcool2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -72,11 +93,8 @@
 
     <EditText
         android:id="@+id/edtAlcool"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Digite quantas canecas de chopp de 300ml"
@@ -87,8 +105,9 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnResultadoAlcool"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloAlcool" />
+        app:layout_constraintTop_toBottomOf="@+id/edtAlcoolPeso" />
 
     <TextView
         android:id="@+id/txtTituloAlcool"
@@ -107,4 +126,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnSexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/edtAlcoolPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAlcool" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
