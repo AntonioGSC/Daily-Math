@@ -91,7 +91,7 @@
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Digite a distância em quilômetros aqui"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned|numberDecimal"
         android:maxLength="9"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
